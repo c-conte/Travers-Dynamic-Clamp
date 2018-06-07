@@ -1,0 +1,153 @@
+<RTXI class="settings" version="2.2">
+ <OBJECT component="rt" id="0">
+  <PARAM name="Period">1000000</PARAM>
+ </OBJECT>
+ <OBJECT component="io" id="1">
+  <PARAM name="0 Destination ID">11</PARAM>
+  <PARAM name="0 Destination channel">0</PARAM>
+  <PARAM name="0 Source ID">13</PARAM>
+  <PARAM name="0 Source channel">0</PARAM>
+  <PARAM name="1 Destination ID">13</PARAM>
+  <PARAM name="1 Destination channel">0</PARAM>
+  <PARAM name="1 Source ID">11</PARAM>
+  <PARAM name="1 Source channel">0</PARAM>
+  <PARAM name="2 Destination ID">13</PARAM>
+  <PARAM name="2 Destination channel">1</PARAM>
+  <PARAM name="2 Source ID">14</PARAM>
+  <PARAM name="2 Source channel">0</PARAM>
+  <PARAM name="Num Links">3</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" library="analogy_driver.so" id="2">
+  <PARAM name="Num Devices">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" library="model_loader.so" id="3"/>
+ <OBJECT component="plugin" library="module_installer.so" id="4"/>
+ <OBJECT component="plugin" library="system_control.so" id="5"/>
+ <OBJECT component="plugin" library="oscilloscope.so" id="6">
+  <PARAM name="Num Panels">1</PARAM>
+  <OBJECT id="12" name="0">
+   <PARAM name="0 ID">13</PARAM>
+   <PARAM name="0 index">0</PARAM>
+   <PARAM name="0 offset">0</PARAM>
+   <PARAM name="0 pen color">#ff0010</PARAM>
+   <PARAM name="0 pen style">1</PARAM>
+   <PARAM name="0 pen width">1</PARAM>
+   <PARAM name="0 scale">0.025</PARAM>
+   <PARAM name="0 type">2</PARAM>
+   <PARAM name="1 ID">14</PARAM>
+   <PARAM name="1 index">0</PARAM>
+   <PARAM name="1 offset">0</PARAM>
+   <PARAM name="1 pen color">#0075dc</PARAM>
+   <PARAM name="1 pen style">1</PARAM>
+   <PARAM name="1 pen width">1</PARAM>
+   <PARAM name="1 scale">0.1</PARAM>
+   <PARAM name="1 type">2</PARAM>
+   <PARAM name="2 ID">11</PARAM>
+   <PARAM name="2 index">3</PARAM>
+   <PARAM name="2 offset">0</PARAM>
+   <PARAM name="2 pen color">#2bce48</PARAM>
+   <PARAM name="2 pen style">1</PARAM>
+   <PARAM name="2 pen width">1</PARAM>
+   <PARAM name="2 scale">0.5</PARAM>
+   <PARAM name="2 type">8</PARAM>
+   <PARAM name="3 ID">13</PARAM>
+   <PARAM name="3 index">5</PARAM>
+   <PARAM name="3 offset">0</PARAM>
+   <PARAM name="3 pen color">#b266ff</PARAM>
+   <PARAM name="3 pen style">1</PARAM>
+   <PARAM name="3 pen width">1</PARAM>
+   <PARAM name="3 scale">0.05</PARAM>
+   <PARAM name="3 type">8</PARAM>
+   <PARAM name="DivT">500</PARAM>
+   <PARAM name="DivX">10</PARAM>
+   <PARAM name="DivY">10</PARAM>
+   <PARAM name="H">572</PARAM>
+   <PARAM name="Num Channels">4</PARAM>
+   <PARAM name="Paused">0</PARAM>
+   <PARAM name="Refresh">250</PARAM>
+   <PARAM name="Size">5001</PARAM>
+   <PARAM name="W">711</PARAM>
+   <PARAM name="X">2</PARAM>
+   <PARAM name="Y">0</PARAM>
+  </OBJECT>
+ </OBJECT>
+ <OBJECT component="plugin" library="data_recorder.so" id="7">
+  <PARAM name="Num Panels">0</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" library="connector.so" id="8"/>
+ <OBJECT component="plugin" library="performance_measurement.so" id="9"/>
+ <OBJECT component="plugin" library="userprefs.so" id="10"/>
+ <OBJECT component="plugin" library="GA_Calc.so" id="11">
+  <PARAM name="EK (mV)">-100</PARAM>
+  <PARAM name="GA">0.00027776</PARAM>
+  <PARAM name="GA_MAX (uS)">0.3</PARAM>
+  <PARAM name="H">423</PARAM>
+  <PARAM name="IA">-0.478513</PARAM>
+  <PARAM name="IACell">-9.57026e-10</PARAM>
+  <PARAM name="Minimized">1</PARAM>
+  <PARAM name="On/Off">0</PARAM>
+  <PARAM name="Rate (Hz)">400</PARAM>
+  <PARAM name="V0 (mV)">0</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">0</PARAM>
+  <PARAM name="Y">701</PARAM>
+  <PARAM name="a">0.131333</PARAM>
+  <PARAM name="b">0.408721</PARAM>
+  <PARAM name="cm (nF)">0.0187</PARAM>
+  <PARAM name="paused">0</PARAM>
+  <PARAM name="sigmaa">20</PARAM>
+  <PARAM name="sigmab">-6</PARAM>
+  <PARAM name="taua">2</PARAM>
+  <PARAM name="taub1">200</PARAM>
+  <PARAM name="thetaa">-30</PARAM>
+  <PARAM name="thetab">-70</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" library="Alison_Neuron.so" id="13">
+  <PARAM name="E_K (mV)">-100</PARAM>
+  <PARAM name="E_L (mV)">-59.5</PARAM>
+  <PARAM name="E_Na (mV)">50</PARAM>
+  <PARAM name="G_A_max (uS)">0.5</PARAM>
+  <PARAM name="G_K_max (uS)">0.011</PARAM>
+  <PARAM name="G_L (uS)">0.0018</PARAM>
+  <PARAM name="G_Na_max (uS)">0.24</PARAM>
+  <PARAM name="H">423</PARAM>
+  <PARAM name="IA">0.0149137</PARAM>
+  <PARAM name="Iapp (nA)">0</PARAM>
+  <PARAM name="Rate (Hz)">400</PARAM>
+  <PARAM name="Time (s)">216743</PARAM>
+  <PARAM name="V0 (mV)">-55.038</PARAM>
+  <PARAM name="W">294</PARAM>
+  <PARAM name="X">721</PARAM>
+  <PARAM name="Y">0</PARAM>
+  <PARAM name="a">0.131333</PARAM>
+  <PARAM name="b">0.408721</PARAM>
+  <PARAM name="cm (nF)">0.0187</PARAM>
+  <PARAM name="h">0.997344</PARAM>
+  <PARAM name="m">0.0038459</PARAM>
+  <PARAM name="n">0.0038459</PARAM>
+  <PARAM name="paused">0</PARAM>
+  <PARAM name="taua">2</PARAM>
+  <PARAM name="taub">200</PARAM>
+  <PARAM name="tauh0">1.5</PARAM>
+  <PARAM name="tauh1">135</PARAM>
+  <PARAM name="taun0">1.8</PARAM>
+  <PARAM name="taun1">138</PARAM>
+ </OBJECT>
+ <OBJECT component="plugin" library="ia-activate.so" id="14">
+  <PARAM name="Current Range End (pA)">-210</PARAM>
+  <PARAM name="Current Range Start (pA)">0</PARAM>
+  <PARAM name="Cycles (#)">1</PARAM>
+  <PARAM name="Delay (s)">0</PARAM>
+  <PARAM name="Depolarization Time (s)">1</PARAM>
+  <PARAM name="Duty Cycle (%)">15</PARAM>
+  <PARAM name="H">381</PARAM>
+  <PARAM name="Increments">8</PARAM>
+  <PARAM name="Max Amplitude (pA)">150</PARAM>
+  <PARAM name="Offset (mA)">0</PARAM>
+  <PARAM name="Period (s)">1</PARAM>
+  <PARAM name="W">319</PARAM>
+  <PARAM name="X">620</PARAM>
+  <PARAM name="Y">237</PARAM>
+  <PARAM name="paused">0</PARAM>
+ </OBJECT>
+</RTXI>
